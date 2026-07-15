@@ -1,0 +1,19 @@
+{
+  "name": "arbor",
+  "version": "1.0.0",
+  "description": "A CLI tool for generating project folder and file structures from a simple blueprint.",
+  "bin": "./bin/arbor.js",
+  "scripts": {},
+  "keywords": [
+    "forge",
+    "folder",
+    "files",
+    "blueprint"
+  ],
+  "author": "Luis Angel Mendoza Lucio",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cac": "7.0.0"
+  }
+}

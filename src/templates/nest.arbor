@@ -1,0 +1,11 @@
+common/
+  decorators/
+  filters/
+  guards/
+  interceptors/
+  pipes/
+  dto/
+config/
+  database/
+  app/
+modules/

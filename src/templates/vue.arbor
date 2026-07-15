@@ -1,0 +1,12 @@
+assets/
+  images/
+  styles/
+components/
+  common/
+  layout/
+composables/
+views/
+router/
+store/
+services/
+utils/

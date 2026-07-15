@@ -1,0 +1,11 @@
+core/
+  guards/
+  interceptors/
+  services/
+features/
+  home/
+shared/
+  components/
+  directives/
+  pipes/
+layouts/
