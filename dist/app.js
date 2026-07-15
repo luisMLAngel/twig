@@ -1,8 +1,8 @@
 import { cac } from 'cac'
 import { build } from '../src/commands/index.js'
-import { TwigError } from '../src/errors/TwigError.js'
+import { RootiError } from '../src/errors/RootiError.js'
 
-const cli = cac('twig')
+const cli = cac('rooti')
 
 cli
   .command(
@@ -19,7 +19,7 @@ cli
     try {
       await build(template, options)
     } catch (e) {
-      if (e instanceof TwigError) {
+      if (e instanceof RootiError) {
         console.error(`Error: ${e.message}`)
         if (options.verbose) {
           console.error(e.stack)

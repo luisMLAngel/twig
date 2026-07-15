@@ -1,4 +1,4 @@
-export class TwigError extends Error {
+export class RootiError extends Error {
   constructor(message, code) {
     super(message)
     this.name = this.constructor.name
@@ -6,19 +6,19 @@ export class TwigError extends Error {
   }
 }
 
-export class TemplateNotFoundError extends TwigError {
+export class TemplateNotFoundError extends RootiError {
   constructor(template) {
     super(`Template file not found: "${template}"`, 'TEMPLATE_NOT_FOUND')
   }
 }
 
-export class InvalidOptionsError extends TwigError {
+export class InvalidOptionsError extends RootiError {
   constructor(message) {
     super(message, 'INVALID_OPTIONS')
   }
 }
 
-export class ParserTemplateError extends TwigError {
+export class ParserTemplateError extends RootiError {
   constructor(message) {
     super(message, 'PARSER_TEMPLATE_ERROR')
   }

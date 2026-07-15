@@ -1,8 +1,8 @@
 {
-  "name": "Twig",
+  "name": "Rooti",
   "version": "1.0.0",
   "description": "A CLI tool for generating project folder and file structures from a simple blueprint.",
-  "bin": "./bin/Twig.js",
+  "bin": "./bin/rooti.js",
   "scripts": {},
   "keywords": [
     "forge",
@@ -23,17 +23,17 @@
     "devtools"
   ],
   "author": "Luis Angel Mendoza Lucio",
-  "license": "MIT",
+  "license": "ISC",
   "type": "module",
   "engines": {
     "node": ">=18.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/luisMLAngel/Twig.git"
+    "url": "https://github.com/luisMLAngel/Rooti.git"
   },
   "bugs": {
-    "url": "https://github.com/luisMLAngel/Twig/issues"
+    "url": "https://github.com/luisMLAngel/Rooti/issues"
   },
   "dependencies": {
     "cac": "7.0.0"

@@ -1,22 +1,22 @@
-# Twig
+# Rooti
 
 A CLI tool for generating project folder and file structures from a simple blueprint.
 
 ## Installation
 
 ```bash
-npm install -g twig
+npm install -g rooti
 ```
 
 ## Usage
 
 ```bash
-twig build <template> [options]
+rooti build <template> [options]
 ```
 
 ### Built-in Templates
 
-Twig includes ready-to-use templates for popular frameworks:
+Rooti includes ready-to-use templates for popular frameworks:
 
 | Template  | Description                         |
 | --------- | ----------------------------------- |
@@ -29,7 +29,7 @@ Twig includes ready-to-use templates for popular frameworks:
 #### Example
 
 ```bash
-twig build nodejs
+rooti build nodejs
 ```
 
 This will generate the following structure:
@@ -50,10 +50,10 @@ tests/
 
 ### Custom Blueprints
 
-You can also pass a path to your own `.twig` blueprint file:
+You can also pass a path to your own `.rooti` blueprint file:
 
 ```bash
-twig build ./my-project.twig
+rooti build ./my-project.rooti
 ```
 
 ### Options
@@ -67,14 +67,14 @@ twig build ./my-project.twig
 #### Examples
 
 ```bash
-twig build nodejs --output ./my-app
-twig build nest --verbose
-twig build vue --no-strict
+rooti build nodejs --output ./my-app
+rooti build nest --verbose
+rooti build vue --no-strict
 ```
 
 ## Blueprint Syntax
 
-Blueprint files (`.twig`) use indentation to define the hierarchy of folders and files.
+Blueprint files (`.rooti`) use indentation to define the hierarchy of folders and files.
 
 - **Directories** are denoted by a trailing `/`
 - **Files** are plain names without a trailing `/`
@@ -116,7 +116,7 @@ tests/
 
 ## Validation (Strict Mode)
 
-By default, Twig runs in strict mode, which enforces:
+By default, Rooti runs in strict mode, which enforces:
 
 - No blank lines allowed in the blueprint
 - Indentation must be multiples of 2 spaces
@@ -125,12 +125,12 @@ By default, Twig runs in strict mode, which enforces:
 You can disable strict mode with `--no-strict`:
 
 ```bash
-twig build my-blueprint.twig --no-strict
+rooti build my-blueprint.rooti --no-strict
 ```
 
 ## Error Handling
 
-Twig provides descriptive error messages for common issues:
+Rooti provides descriptive error messages for common issues:
 
 - **TemplateNotFoundError** - The specified template file does not exist
 - **ParserTemplateError** - The blueprint file has syntax errors (blank lines, invalid indentation, etc.)

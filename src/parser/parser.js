@@ -1,4 +1,4 @@
-import { ParserTemplateError } from '../errors/TwigError.js'
+import { ParserTemplateError } from '../errors/RootiError.js'
 
 export async function parser(content, options) {
   const lines = content.split(/\r?\n/)
