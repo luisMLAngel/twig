@@ -7,8 +7,9 @@ import { getTemplatesDir, getTemplatePath, validateName } from './utils.js'
 import { INNER_TEMPLATES } from '../config/config.js'
 
 export async function save(template, options) {
-  validateName(template)
   const name = options.name
+  validateName(name)
+  validateName(template)
 
   if (INNER_TEMPLATES.includes(name)) {
     throw new TemplateNameAlreadyExistsError(

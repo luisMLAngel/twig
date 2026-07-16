@@ -16,7 +16,6 @@ export async function removeTemplate(templateName) {
 }
 
 export async function listTemplates() {
-  console.log('Your stored templates:')
   await list()
 }
 
